@@ -635,6 +635,43 @@ body.reports-page .animate-ui-card--wide {
     color: #f5f8ff;
 }
 
+/* Content spacing - prevent text from being too close to edges */
+section {
+    padding: 1.25rem;
+    border-radius: 0.75rem;
+}
+
+.manage-panel {
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    background: linear-gradient(135deg, rgba(15,23,42,0.6), rgba(2,6,23,0.6));
+}
+
+/* Increase padding inside cards and panels */
+.animate-ui-card {
+    padding: 2.5rem;
+}
+
+.animate-ui-card--wide {
+    padding: 1.5rem 1.25rem;
+}
+
+/* Ensure content has proper spacing */
+section h1,
+section h2,
+section h3,
+.manage-panel h1,
+.manage-panel h2,
+.manage-panel h3 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+section p,
+.manage-panel p {
+    margin-bottom: 1rem;
+}
+
 @media print {
     body, .app-shell, .app-main, .animate-ui-card, .report-table, table, th, td {
         background: transparent !important;
